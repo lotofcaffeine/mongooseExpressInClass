@@ -1,8 +1,7 @@
-module.exports = [
-  {
+module.exports = [{
     name: "Gijs",
     age: 27,
-    mood: "Undefined"
+    mood: "Funny"
   },
   {
     name: "Guido",

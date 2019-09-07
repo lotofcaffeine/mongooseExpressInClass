@@ -1,0 +1,27 @@
+<h1>Hello</h1>
+
+
+{{> form route }}
+<form action="/form/updateUser" method="POST">
+    <input type="text" name="name" placeholder="who do you want update">
+    <input type="text" name="mood" placeholder="mood">
+    <button type="submit">SEND THIS</button>
+</form>
+
+
+<form action="/form/deleteUser" method="POST">
+    <input type="text" name="name" placeholder="kill someone">
+    <button type="submit">SEND THIS</button>
+</form>
+
+{{!-- <form action="/deletebyId" method="POST">
+    <input type="text" name="id" placeholder="kill someone">
+    <button type="submit">SEND THIS</button>
+</form> --}}
+
+
+<ul>
+    {{#each allUsers}}
+    <li>{{this.id}}/{{this.name}}/{{this.age}}/{{this.mood}}</li>
+    {{/each}}
+</ul>
